@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Barcode Generator</title>
+    <link href="src/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="title">
+          <h2>Generator</h2>
+          <img src="src/img/icons8-barcode-64.png" />
+          <div class="qr">
+            <h5>Bar</h5>
+            <h6 class="code">Code</h6>
+          </div>
+        </div>
+        <div class="row">
+          <input
+            type="text"
+            name="inputTask"
+            id="Text"
+            placeholder="Add the text you want to generate"
+          />
+          <button onclick="generate()">Generate</button>
+        </div>
+        <div id="imgBox">
+          <canvas id="barcode"></canvas>
+        </div>
+        <div class="footer">
+          <p>Design by <a href="">OmanGT</a> 2024</p>
+        </div>
+      </div>
+    </div>
+    <script src="src/js/script.js"></script>
+    <script src="src/js/JsBarcode.all.min.js.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.6/JsBarcode.all.min.js"
+      integrity="sha512-k2wo/BkbloaRU7gc/RkCekHr4IOVe10kYxJ/Q8dRPl7u3YshAQmg3WfZtIcseEk+nGBdK03fHBeLgXTxRmWCLQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  </body>
+</html>
